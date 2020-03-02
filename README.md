@@ -1,18 +1,12 @@
-# Here's some basic Webpack & Babel frontend starter
-
-## Install
+# IC-English outputs webpage
 
 ```
 npm install
 ```
 
-## Run dev server
-
 ```
 npm run dev
 ```
-
-## Run Webpack Prod version
 
 ```
 npm run build
