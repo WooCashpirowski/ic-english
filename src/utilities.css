@@ -131,6 +131,10 @@ a {
   color: #fff;
 }
 
+.selection-card h2 span {
+  font-size: 4rem;
+}
+
 .selection-card.card-2 {
   padding: 0.5rem;
 }
