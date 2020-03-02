@@ -1,0 +1,16 @@
+:root {
+  --main-color: rgba(49, 71, 158, 1);
+  --secondary-color: rgba(237, 28, 36, 1);
+  --light-color: rgba(237, 233, 233, 1);
+  --bronze-color: ;
+}
+
+.color-main {
+  color: var(--main-color);
+}
+.color-secondary {
+  color: var(--secondary-color);
+}
+.color-light {
+  color: var(--light-color);
+}

@@ -1,5 +1,7 @@
 import "./index.css";
 import "./mobile.css";
+import "./config.css";
+import "./utilities.css";
 import "@fortawesome/fontawesome-free/js/all";
 
 // Section select
