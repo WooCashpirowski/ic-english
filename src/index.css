@@ -202,12 +202,7 @@ header {
   height: 580px;
   background: var(--main-color);
   margin: 0 1rem 1rem;
-  /* display: none; */
   transform: scale(0.95);
-}
-
-.mm-container .mm-wrapper.active {
-  /* display: block; */
 }
 
 .mm-container .mm-wrapper iframe {
