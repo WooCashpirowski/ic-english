@@ -77,16 +77,47 @@ header {
 }
 
 /* Season Section */
+/* Elearning Lessons Section */
 
-.season-container .episodes-section {
+.season-container .section-wrapper {
+  position: relative;
+  width: 100vw;
+  z-index: -1;
+}
+
+.season-container .episodes-section,
+.season-container .chapter-section {
   padding: 2rem 0.5rem;
   background: linear-gradient(-145deg, #fef9f9, #d5d2d2);
   box-shadow: 20px 20px 60px #c9c6c6, -20px -20px 60px #ffffff;
-  display: none;
+  position: absolute;
+  width: 98%;
+  left: 1%;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+
+  transition: all 1.2s cubic-bezier(0, 0, 0, 1);
 }
 
-.episodes-section.active {
-  display: block;
+.season-container .episodes-section.active,
+.season-container .chapter-section.active {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.season-container .mm-buttons {
+  margin: 0 0 1rem;
+  justify-content: center;
+}
+
+.season-container .mm-buttons .mm-btn {
+  width: 190px;
+}
+.season-container .mm-buttons.season .mm-btn {
+  width: 153px;
 }
 
 .episodes-grid {
@@ -138,6 +169,18 @@ header {
   width: 100%;
 }
 
+.chapter-section .ep-card {
+  width: 160px;
+  height: 160px;
+}
+
+.chapter-section .ep-title {
+  width: 140px;
+  height: 140px;
+  font-size: 16px;
+  padding: 5px;
+}
+
 /* Quiz section */
 
 .mm-container {
@@ -152,43 +195,6 @@ header {
   min-height: calc(100vh - 50px);
 }
 
-.mm-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.mm-buttons .mm-btn {
-  border-radius: 5px;
-  background: linear-gradient(45deg, #d5d2d2, #fef9f9);
-  box-shadow: 8px -8px 24px #c0bdbd, -8px 8px 24px #ffffff;
-  height: 60px;
-  width: 120px;
-  margin: 0.3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--main-color);
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.mm-buttons .mm-btn:hover {
-  background: linear-gradient(135deg, #d5d2d2, #fef9f9);
-}
-
-.mm-buttons .mm-btn:active {
-  transform: scale(0.95);
-  box-shadow: 4px -4px 14px #c0bdbd, -4px 4px 14px #ffffff;
-}
-.mm-buttons .mm-btn.active {
-  transform: scale(0.95);
-  background: linear-gradient(45deg, #2c408e, #344ca9);
-  box-shadow: 4px -4px 14px #c0bdbd, -4px 4px 14px #ffffff;
-  color: #fff;
-}
-
 .mm-container .mm-wrapper {
   position: relative;
   overflow: hidden;
@@ -196,12 +202,12 @@ header {
   height: 580px;
   background: var(--main-color);
   margin: 0 1rem 1rem;
-  display: none;
+  /* display: none; */
   transform: scale(0.95);
 }
 
 .mm-container .mm-wrapper.active {
-  display: block;
+  /* display: block; */
 }
 
 .mm-container .mm-wrapper iframe {
@@ -211,48 +217,6 @@ header {
   width: 100%;
   height: 100%;
   border: 0;
-}
-
-/* E-learning lessons section */
-
-.season-container .mm-buttons {
-  width: 80%;
-  margin: 1rem auto;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.season-container .mm-buttons .mm-btn {
-  text-align: center;
-  width: 200px;
-}
-
-.season-container .mm-buttons.season .mm-btn {
-  width: 150px;
-}
-
-.chapter-section {
-  padding: 0.5rem;
-  border-radius: 0;
-  background: linear-gradient(-145deg, #fef9f9, #d5d2d2);
-  box-shadow: 20px 20px 60px #c9c6c6, -20px -20px 60px #ffffff;
-  display: none;
-}
-
-.chapter-section.active {
-  display: block;
-}
-
-.chapter-section .ep-card {
-  width: 160px;
-  height: 160px;
-}
-
-.chapter-section .ep-title {
-  width: 140px;
-  height: 140px;
-  font-size: 16px;
-  padding: 5px;
 }
 
 /* Footer */

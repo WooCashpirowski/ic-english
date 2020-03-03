@@ -160,3 +160,42 @@ a {
   background: linear-gradient(-145deg, #344ca9, #2c408e);
   transform: scale(0.97);
 }
+
+/* Tab-buttons */
+
+.mm-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mm-buttons .mm-btn {
+  border-radius: 5px;
+  background: linear-gradient(45deg, #d5d2d2, #fef9f9);
+  box-shadow: 8px -8px 24px #c0bdbd, -8px 8px 24px #ffffff;
+  height: 60px;
+  width: 120px;
+  margin: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mm-buttons .mm-btn:hover {
+  background: linear-gradient(135deg, #d5d2d2, #fef9f9);
+}
+
+.mm-buttons .mm-btn:active {
+  transform: scale(0.95);
+  box-shadow: 4px -4px 14px #c0bdbd, -4px 4px 14px #ffffff;
+}
+.mm-buttons .mm-btn.active {
+  transform: scale(0.95);
+  background: linear-gradient(45deg, #2c408e, #344ca9);
+  box-shadow: 4px -4px 14px #c0bdbd, -4px 4px 14px #ffffff;
+  color: #fff;
+}
