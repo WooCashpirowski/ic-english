@@ -62,9 +62,9 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+
   opacity: 1;
-  transition: all 0.7s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .selection-item {
@@ -181,7 +181,7 @@ header {
   padding: 5px;
 }
 
-/* Quiz section */
+/* Quiz/lesson section */
 
 .mm-container {
   display: flex;
@@ -203,6 +203,10 @@ header {
   background: var(--main-color);
   margin: 0 1rem 1rem;
   transform: scale(0.95);
+  display: none;
+}
+.mm-container .mm-wrapper.active {
+  display: block;
 }
 
 .mm-container .mm-wrapper iframe {

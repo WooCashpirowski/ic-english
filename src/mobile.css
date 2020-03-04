@@ -1,0 +1,106 @@
+@media (max-width: 985px) {
+  .main-container .select {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .selection-item {
+    width: 400px;
+    text-align: center;
+  }
+  .selection-item img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-container .select {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .selection-item {
+    width: 60%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .selection-item img {
+    width: 90%;
+  }
+
+  .footer .funding-info {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container .select {
+    justify-content: flex-start;
+    padding-top: 3rem;
+  }
+
+  .selection-item {
+    width: 65%;
+  }
+
+  .select .selection-card {
+    margin: 0.5rem;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .mm-footer {
+    display: none;
+  }
+
+  .season-container .mm-buttons {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .season-container .mm-buttons {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 570px) {
+  .selection-item {
+    width: 75%;
+  }
+}
+
+@media (max-width: 470px) {
+  .main-container .select {
+    padding-top: 5rem;
+  }
+
+  .selection-item {
+    width: 85%;
+  }
+
+  .footer .erasmus-footer {
+    width: 150px;
+  }
+
+  .season-container .mm-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-height: 420px) {
+  .main-container .select {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .footer {
+    display: none;
+  }
+}

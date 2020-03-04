@@ -98,6 +98,7 @@ module.exports = {
         useShortDoctype: true
       }
     }),
+
     new MiniCssExtractPlugin({
       filename: "app.bundle.css"
     }),
